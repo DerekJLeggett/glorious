@@ -1,0 +1,60 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/favicon.png" alt="gLORIous Creations AZ" width="30" height="24"
+        class="d-inline-block align-text-top">
+      gLORIous Creations AZ
+    </a>
+  </div>
+</nav>
+<div class="container text-center">
+  <div class="row">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/medium.png" class="d-block w-100" alt="Logo">
+          </div>
+          <div class="carousel-item" *ngFor="let photo of photos">
+            <img src="/api/getPhoto?id={{photo.id}}" class="d-block w-100" alt={{photo.fileName}}>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+</div>
+<div class="container text-center">
+  <h3>gLORIous Creations AZ</h3>
+  <p><em>We love being crafty!</em></p>
+  <p>Enjoy seeing what we have to offer.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <p><strong>Lori</strong></p><br>
+      <img src="/assets/LoriCropped.jfif" class="img-circle person img-fluid" alt="Lori">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="https://www.facebook.com/gloriouscreationsaz/" target="_blank">
+        <img src="/assets/facebook.png" class="img-fluid" alt="Facebook">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="https://www.instagram.com/gloriouscreationsaz/" target="_blank">
+        <img src="/assets/instagram.png" class="img-fluid" alt="Instagram">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:gloriouscreationsaz@gmail.com">
+        <img src="/assets/email.png" class="img-fluid" alt="Email">
+      </a>
+    </div>
+  </div>
+</div>
